@@ -42,6 +42,12 @@
     		<form:input class="form-control" path="pages"/>
     		<div class="text-danger"><form:errors path="pages"/></div>
     	</div>
+    	
+    	<div class="form-group">
+    		<label for="releaseDate">Data de Lançamento</label>
+    		<form:input class="form-control" path="releaseDate" type="date"/>
+    		<div class="text-danger"><form:errors path="releaseDate"/></div>
+    	</div>
     	<div class="form-group">
     		<c:forEach items="${types}" var="bookType" varStatus="status">
     		<div>
